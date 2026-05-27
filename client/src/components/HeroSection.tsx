@@ -1,9 +1,9 @@
 export function HeroSection() {
   return (
     <section className="container py-16 md:py-24">
-      <div className="grid md:grid-cols-2 gap-12 items-start">
+      <div className="grid md:grid-cols-3 gap-12 items-start">
         {/* Left Column: Main Message */}
-        <div>
+        <div className="md:col-span-2">
           <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
             從精品到
             <span className="text-blue-600"> 可持續精品</span>
@@ -19,19 +19,19 @@ export function HeroSection() {
               <li className="flex gap-3">
                 <span className="text-blue-600 font-bold">•</span>
                 <span>
-                  <strong>核心問題</strong>：過度精緻化導致成本結構失衡，即使銷售成長也難以獲利
+                  <strong>現況觀察</strong>：過度精緻化的營運模式，導致成本結構與銷售成長不成正比
                 </span>
               </li>
               <li className="flex gap-3">
                 <span className="text-blue-600 font-bold">•</span>
                 <span>
-                  <strong>根本原因</strong>：象箸之憂 —— 物料、包裝、機器設備、人力成本環環相扣
+                  <strong>根本因素</strong>：象箸之憂 —— 物料、包裝、機器設備、人力成本環環相扣
                 </span>
               </li>
               <li className="flex gap-3">
                 <span className="text-blue-600 font-bold">•</span>
                 <span>
-                  <strong>解決方案</strong>：從「日式無菜單」轉型為「海底撈可複製」模式
+                  <strong>優化方向</strong>：從「日式無菜單」轉向「海底撈可複製」模式
                 </span>
               </li>
               <li className="flex gap-3">
@@ -53,27 +53,19 @@ export function HeroSection() {
           </div>
         </div>
 
-        {/* Right Column: Disclaimer & Visual */}
-        <div className="space-y-6">
-          {/* Visual Placeholder */}
-          <div className="bg-gradient-to-br from-blue-100 to-blue-50 rounded-2xl p-12 h-96 flex items-center justify-center">
-            <div className="text-center">
-              <div className="text-6xl mb-4">📊</div>
-              <p className="text-gray-600">數據可視化區域</p>
-            </div>
-          </div>
-
+        {/* Right Column: Disclaimer */}
+        <div>
           {/* Disclaimer Box */}
-          <div className="bg-amber-50 rounded-xl p-6 border border-amber-200">
+          <div className="bg-amber-50 rounded-xl p-6 border border-amber-200 sticky top-20">
             <div className="flex gap-3 mb-3">
-              <span className="text-2xl">⚠️</span>
-              <h4 className="font-bold text-amber-900">數據說明與免責聲明</h4>
+              <span className="text-2xl">ℹ️</span>
+              <h4 className="font-bold text-amber-900">數據說明</h4>
             </div>
             <p className="text-sm text-amber-800 leading-relaxed mb-3">
               本簡報中的所有數據均為<strong>概略估算</strong>，基於現有可見資訊推導。由於職位限制，部分數據可能無法完全準確反映實際營運狀況。
             </p>
             <p className="text-sm text-amber-800 leading-relaxed">
-              本文件旨在提供策略思考方向，具體執行時應進行詳細的財務審計與數據驗證。建議與財務、營運部門進行深入討論，確保決策基於完整、準確的資訊。
+              本文件旨在提供策略思考方向，具體執行時建議與財務、營運部門進行深入討論，以完整、準確的資訊為基礎進行決策。
             </p>
           </div>
         </div>

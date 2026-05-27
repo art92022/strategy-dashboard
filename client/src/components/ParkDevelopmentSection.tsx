@@ -160,31 +160,45 @@ export function ParkDevelopmentSection() {
       {/* Sales Funnel */}
       <div className="mb-12">
         <h3 className="text-2xl font-bold text-gray-900 mb-6">階段性銷售漏斗：獲利規模化</h3>
-        <div className="space-y-4">
-          <div className="bg-gradient-to-r from-green-100 to-green-50 rounded-lg p-6 border-l-4 border-green-600">
-            <div className="flex items-center gap-4">
-              <div className="text-4xl font-bold text-green-600">$5K-$8K</div>
+        <div className="space-y-3">
+          {/* Top of Funnel */}
+          <div className="bg-gradient-to-r from-green-100 to-green-50 rounded-lg p-6 border border-green-300 w-full">
+            <div className="flex items-center justify-between">
               <div>
-                <h4 className="font-bold text-gray-900">入門款</h4>
-                <p className="text-sm text-gray-600">經層客戶購購求、經認品質</p>
+                <h4 className="text-lg font-bold text-gray-900">入門款</h4>
+                <p className="text-sm text-gray-600">$5K-$8K</p>
+              </div>
+              <div className="text-right">
+                <p className="text-xs text-gray-600">市場基值</p>
+                <p className="text-2xl font-bold text-green-600">100%</p>
               </div>
             </div>
           </div>
-          <div className="bg-gradient-to-r from-amber-100 to-amber-50 rounded-lg p-6 border-l-4 border-amber-600">
-            <div className="flex items-center gap-4">
-              <div className="text-4xl font-bold text-amber-600">$15,000</div>
+
+          {/* Middle of Funnel */}
+          <div className="bg-gradient-to-r from-amber-100 to-amber-50 rounded-lg p-6 border border-amber-300 w-5/6 mx-auto">
+            <div className="flex items-center justify-between">
               <div>
-                <h4 className="font-bold text-gray-900">核心款</h4>
-                <p className="text-sm text-gray-600">同事團購引、品牌主銷售</p>
+                <h4 className="text-lg font-bold text-gray-900">核心款</h4>
+                <p className="text-sm text-gray-600">$15,000</p>
+              </div>
+              <div className="text-right">
+                <p className="text-xs text-gray-600">主要種子</p>
+                <p className="text-2xl font-bold text-amber-600">60%</p>
               </div>
             </div>
           </div>
-          <div className="bg-gradient-to-r from-blue-100 to-blue-50 rounded-lg p-6 border-l-4 border-blue-600">
-            <div className="flex items-center gap-4">
-              <div className="text-4xl font-bold text-blue-600">VIP</div>
+
+          {/* Bottom of Funnel */}
+          <div className="bg-gradient-to-r from-blue-100 to-blue-50 rounded-lg p-6 border border-blue-300 w-2/3 mx-auto">
+            <div className="flex items-center justify-between">
               <div>
-                <h4 className="font-bold text-gray-900">超值大眾</h4>
-                <p className="text-sm text-gray-600">年節禮盒、福委合約購</p>
+                <h4 className="text-lg font-bold text-gray-900">VIP 超值款</h4>
+                <p className="text-sm text-gray-600">年節禮盒、福委合約</p>
+              </div>
+              <div className="text-right">
+                <p className="text-xs text-gray-600">高種子</p>
+                <p className="text-2xl font-bold text-blue-600">20%</p>
               </div>
             </div>
           </div>
@@ -206,21 +220,21 @@ export function ParkDevelopmentSection() {
             <div className="text-4xl flex-shrink-0">🍵</div>
             <div>
               <h4 className="font-bold text-gray-900 mb-2">下午茶系列</h4>
-              <p className="text-sm text-gray-600">100 顆超訂、單親口口分享、園區心備配</p>
+              <p className="text-sm text-gray-600">100 顆超訂、單親口分享、園區心備配</p>
             </div>
           </div>
           <div className="flex gap-4">
             <div className="text-4xl flex-shrink-0">🎂</div>
             <div>
               <h4 className="font-bold text-gray-900 mb-2">達克大蛋糕</h4>
-              <p className="text-sm text-gray-600">公司慶祝、團隊分享會議、創造新銷售曝露</p>
+              <p className="text-sm text-gray-600">公司慶祝、團隊分享會議、創造新銷售曝露機會</p>
             </div>
           </div>
           <div className="flex gap-4">
             <div className="text-4xl flex-shrink-0">🎁</div>
             <div>
               <h4 className="font-bold text-gray-900 mb-2">企業禮盒</h4>
-              <p className="text-sm text-gray-600">規模統一、常溫運費、組合福至會生回購</p>
+              <p className="text-sm text-gray-600">規模統一、常溫運費、組合福利會生回購動力</p>
             </div>
           </div>
         </div>
