@@ -1,28 +1,18 @@
 import { Switch, Route, Router } from "wouter";
-import { queryClient } from "./lib/queryClient";
-import { QueryClientProvider } from "@tanstack/react-query";
-import { Toaster } from "@/components/ui/toaster";
+import Home from "@/pages/Home";
 import NotFound from "@/pages/not-found";
-import Dashboard from "@/pages/Dashboard";
 
 function RouterComponent() {
   return (
     <Router base="/strategy-dashboard">
       <Switch>
-        <Route path="/" component={Dashboard} />
+        <Route path="/" component={Home} />
         <Route component={NotFound} />
       </Switch>
     </Router>
   );
 }
 
-function App() {
-  return (
-    <QueryClientProvider client={queryClient}>
-      <RouterComponent />
-      <Toaster />
-    </QueryClientProvider>
-  );
+export default function App() {
+  return <RouterComponent />;
 }
-
-export default App;
