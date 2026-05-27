@@ -12,7 +12,7 @@ const sampleKPIData: KPIData[] = [
   { name: "SKU 集中度", current: 40, target: 60, unit: "%" },
   { name: "包裝工時", current: 100, target: 20, unit: "%" },
   { name: "報廢率", current: 100, target: 50, unit: "%" },
-  { name: "園區訂單", current: 20, target: 50, unit: "%" },
+  { name: "園區開發", current: 0, target: 100, unit: "%" },
   { name: "常溫營收", current: 0, target: 30, unit: "%" },
   { name: "大蛋糕占比", current: 0, target: 10, unit: "%" },
 ];
@@ -143,8 +143,8 @@ export function KPIDashboard() {
 
           <div className="mt-8 grid md:grid-cols-3 gap-6">
             <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
-              <p className="text-sm text-blue-600 font-semibold mb-2">起始營收</p>
-              <p className="text-3xl font-bold text-blue-900">112 萬</p>
+              <p className="text-sm text-blue-600 font-semibold mb-2">待徕動</p>
+              <p className="text-3xl font-bold text-blue-900">0 萬</p>
             </div>
             <div className="bg-amber-50 rounded-lg p-6 border border-amber-200">
               <p className="text-sm text-amber-600 font-semibold mb-2">預計增長</p>

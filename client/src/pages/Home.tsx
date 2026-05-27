@@ -3,6 +3,8 @@ import { DataCard } from "@/components/DataCard";
 import { StrategyCard } from "@/components/StrategyCard";
 import { KPIDashboard } from "@/components/KPIDashboard";
 import { PainPointSection } from "@/components/PainPointSection";
+import { HeroSection } from "@/components/HeroSection";
+import { ParkDevelopmentSection } from "@/components/ParkDevelopmentSection";
 import {
   currentSituation,
   productionCapacity,
@@ -63,36 +65,10 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="container py-16 md:py-24">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              從精品到
-              <span className="text-blue-600"> 可持續精品</span>
-            </h2>
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              營運優化策略展示平台。透過數據分析、成本優化與策略調整，實現品牌的永續發展。
-            </p>
-            <div className="flex gap-4">
-              <button className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
-                開始探索
-              </button>
-              <button className="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">
-                下載簡報
-              </button>
-            </div>
-          </div>
-          <div className="bg-gradient-to-br from-blue-100 to-blue-50 rounded-2xl p-12 h-96 flex items-center justify-center">
-            <div className="text-center">
-              <div className="text-6xl mb-4">📊</div>
-              <p className="text-gray-600">數據可視化區域</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <HeroSection />
 
       {/* Current Situation Section */}
-      <section id="situation" className="container py-16 md:py-24">
+      <section id="situation" className="container py-16 md:py-24 border-t border-gray-200 pt-16">
         <h2 className="text-4xl font-bold text-gray-900 mb-4">{currentSituation.title}</h2>
         <p className="text-lg text-gray-600 mb-12">{currentSituation.description}</p>
 
@@ -182,7 +158,9 @@ export default function Home() {
       </section>
 
       {/* Pain Point Section */}
-      <PainPointSection />
+      <section className="border-t border-gray-200 pt-16">
+        <PainPointSection />
+      </section>
 
       {/* Product Strategy Section */}
       <section className="container py-16 md:py-24 bg-gradient-to-r from-blue-50 to-transparent rounded-3xl">
@@ -247,8 +225,13 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Park Development Section */}
+      <section className="border-t border-gray-200 pt-16">
+        <ParkDevelopmentSection />
+      </section>
+
       {/* KPI Section */}
-      <section id="kpi" className="container py-16 md:py-24">
+      <section id="kpi" className="container py-16 md:py-24 border-t border-gray-200 pt-16">
         <h2 className="text-4xl font-bold text-gray-900 mb-4">關鍵績效指標 (KPI)</h2>
         <p className="text-lg text-gray-600 mb-12">
           明確的績效指標與衡量方式，確保策略執行的有效性。
